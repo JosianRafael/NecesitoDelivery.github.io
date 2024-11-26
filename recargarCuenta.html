@@ -189,7 +189,7 @@
         </div>
 
         <div class="mb-6 text-center">
-            <button type="button" id="submit-btn" class="boton-contact text-white p-3 rounded-lg w-full bg-red-600 hover:bg-red-700">Enviar Información</button>
+            <button type="submit" id="submit-btn" class="boton-contact text-white p-3 rounded-lg w-full bg-red-600 hover:bg-red-700">Enviar Información</button>
         </div>
     </form>
 </div>
@@ -212,7 +212,6 @@
         var plazo = document.getElementById('term').value === "custom" ? document.getElementById('customTermInput').value + " días" : document.getElementById('term').value + " días";
         var direccion = document.getElementById('direccion').value;
         var comentarios = document.getElementById('comentarios').value || "Ninguno";
-        var formaPago = document.getElementById('paymentMethod').value;
 
         var mensaje = `
 *Detalles del servicio del hogar:*
